@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;900&display=swap");
+:root {
+	--primary-color: #f5da62;
+	--secondary-color: #307296;
+	--third-color: #f5da62;
+	--fourth-color: #b9bab7;
+	--black-color: #000;
+}
+body {
+	font-family: "Alegreya";
+	margin: 0;
+}
+
+/* header */
+.header {
+	background-color: var(--primary-color);
+	color: var(--black-color);
+	padding: 1rem;
+	text-align: center;
+}
+/* footer */
+footer {
+	background-color: var(--primary-color);
+	color: var(--black-color);
+	padding: 1rem;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+.about-text {
+	max-width: 40%;
+	margin: auto;
+	text-align: center;
+}
+
+/* button */
+#btn-translate {
+	background-color: var(--primary-color);
+	color: var(--black-color);
+	margin: 1rem 0rem;
+	padding: 1rem 2rem;
+	text-align: center;
+	border-radius: 5px;
+	border: 0.1rem var(--fourth-color) solid;
+}
+
+.middle-section {
+	max-width: 50%;
+	margin: 5rem auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+#txt-input {
+	display: block;
+	width: 95%;
+	min-height: 15vh;
+	max-height: 20vh;
+	padding: 1rem;
+}
+
+#output {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 1rem;
+	font-weight: 400;
+	min-height: 15vh;
+	max-height: 20vh;
+	overflow: scroll;
+	border: 0.1rem var(--fourth-color) solid;
+}
