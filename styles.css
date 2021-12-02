@@ -20,8 +20,8 @@ body {
 }
 /* footer */
 footer {
-	background-color: var(--primary-color);
-	color: var(--black-color);
+	background-color: var(--secondary-color);
+	color: var(--fourth-color);
 	padding: 1rem;
 	text-align: center;
 }
