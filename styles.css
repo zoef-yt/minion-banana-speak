@@ -1,30 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
 :root {
-	--primary-color: #f5da62;
-	--secondary-color: #307296;
-	--third-color: #f5da62;
-	--fourth-color: #b9bab7;
-	--black-color: #000;
-}
-body {
-	font-family: "Alegreya";
-	margin: 0;
+	--color-primary: #ec4899;
+	--off-white: #fce8f2;
 }
 
-/* header */
-.header {
-	background-color: var(--primary-color);
-	color: var(--black-color);
-	padding: 1rem;
-	text-align: center;
-}
-/* footer */
-footer {
-	background-color: var(--secondary-color);
-	color: var(--fourth-color);
-	padding: 1rem;
-	text-align: center;
-}
 .about-text {
 	max-width: 500px;
 	margin: auto;
@@ -33,20 +13,23 @@ footer {
 
 /* button */
 #btn-translate {
-	background-color: var(--primary-color);
-	color: var(--black-color);
+	background-color: var(--color-primary);
+	color: var(--off-white);
 	margin: 1rem 0rem;
 	padding: 1rem 2rem;
 	text-align: center;
 	border-radius: 5px;
-	border: 0.1rem var(--fourth-color) solid;
+	border: 0.1rem white solid;
 }
 
-.middle-section {
+.container {
+	text-align: center;
 	max-width: 80%;
 	margin: 5rem auto;
-	padding: 1rem;
-	text-align: center;
+	padding: 4rem;
+	margin-bottom: 0;
+	border-radius: 0.5rem;
+	background-color: var(--off-white);
 }
 
 #txt-input {
@@ -55,6 +38,7 @@ footer {
 	min-height: 15vh;
 	max-height: 20vh;
 	padding: 1rem;
+	border: 0.1rem var(--color-primary) solid;
 }
 
 #output {
@@ -62,9 +46,89 @@ footer {
 	width: 100%;
 	text-align: left;
 	padding: 1rem;
+	background-color: white;
 	font-weight: 400;
 	min-height: 15vh;
 	max-height: 20vh;
 	overflow: scroll;
-	border: 0.1rem var(--fourth-color) solid;
+	border: 0.1rem var(--color-primary) solid;
 }
+
+body {
+	padding-bottom: 8rem;
+	margin: 0;
+	background-color: #f2f2f2;
+	font-family: "Montserrat", sans-serif;
+}
+/* !All imported component here */
+.navigation {
+	background-color: var(--color-primary);
+	color: white;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	padding: 0.5rem 1rem;
+}
+.nav-brand {
+	font-weight: bold;
+	font-size: 2rem;
+}
+.nav-pills {
+	text-align: right;
+}
+.navigation .link {
+	color: white;
+}
+
+.link-active {
+	font-weight: bold;
+}
+
+.list-non-bullet {
+	list-style-type: none;
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+.list-on-one-line {
+	white-space: nowrap;
+	/* overflow-x: hidden; */
+}
+.link {
+	text-decoration: none;
+}
+.list-item-inline {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.footer {
+	display: block;
+	background-color: var(--color-primary);
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 99%;
+	margin: 0 auto;
+	padding: 1rem;
+	height: 5rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	text-align: center;
+	border-top: solid 0.1rem white;
+}
+.footer .link {
+	color: white;
+	margin-top: 1rem;
+}
+.footer ul {
+	padding-inline-start: 0;
+}
+.footer li {
+	margin-top: 1rem;
+}
+.footer-heading {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* !All imported component End here */
